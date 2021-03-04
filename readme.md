@@ -74,6 +74,24 @@ A root element of carousel.
 
 Starting element.
 
+### duration
+Type: `number`  
+Animation duration (milliseconds, default is 250)
+
+### timingFunction
+Type: `function`  
+Animation timing function
+```javascript
+/**
+ * Default function is ease-out
+ * @param {number} t — timing fraction (from 0 to 1)
+ * @returns {number} — animation fraction
+ */
+function (t) {
+	return t * (2 - t);
+}
+```
+
 ### onChangePos
 
 Type: `function`
